@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今晚，整片星空将为你一人闪烁</title>
+    <style>
+      #videofilm {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        z-index: -1;
+      }
+      #audiofilm{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-150px,50px);
+        border-radius: 20px;
+      }
+      h1{
+        font-size: 36px;
+        color: #B1BCE6;
+        font-family: '楷体';
+      }
+
+    </style>
+    <link rel="stylesheet" href="css/skystar.css">
+  </head>
+  <body>
+
+
+    <!-- <audio controls height="100" width="100" autoplay="autoplay">
+      <embed height="50" width="100" src="./audio/yudeyingji.mp3">
+    </audio> -->
+    
+
+
+
+
+    <video id="videofilm" poster="img/skystar2.jpg" autoplay muted loop>
+      <source src="video/skystar.mp4" type="video/mp4">
+    </video>
+    <div class="textone">
+      <h1>杨嘻嘻,look at the stars</h1>
+    </div>
+    <div class="text">
+      <h1>look how they shine for u</h1>
+    </div>
+    
+    <div class="container"></div>
+    <script src="js/skystar.js"></script>
+    <audio id="audiofilm" src="./audio/yudeyingji.mp3" controls autoplay loop></audio> 
+    
+  </body>
+</html>
